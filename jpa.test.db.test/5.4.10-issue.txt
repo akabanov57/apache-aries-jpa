@@ -1,3 +1,5 @@
+https://hibernate.atlassian.net/browse/HHH-13791
+
 org.apache.aries.jpa.container [org.apache.aries.jpa.container.impl.DSFTracker] ERROR : Error creating DataSource for punit jpa.test.db
 org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)

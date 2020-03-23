@@ -1,0 +1,10 @@
+Bundle-Version: 1.0.0
+Bundle-Name: Hibernate OSGi Framework Extension
+Bundle-Description: Exported jdk packages needed by third party software
+Fragment-Host: system.bundle; extension:=framework
+Export-Package: \
+	javax.xml.stream, \
+	javax.xml.stream.events, \
+	javax.xml.stream.util
+	
+	

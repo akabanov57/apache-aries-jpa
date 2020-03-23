@@ -1,0 +1,23 @@
+Bundle-Version: 2.7.2-SNAPSHOT
+Bundle-Name: Apache Aries JPA Container API
+Bundle-SymbolicName: org.apache.aries.jpa.api
+Automatic-Module-Name: org.apache.aies.jpa.api
+Bundle-Description: The Apache Software Foundation provides support for the Apache community of open-source software projects.\
+	The Apache projects are characterized by a collaborative, consensus based development process, an open and pragmatic software license,\
+	and a desire to create high quality software that leads the way in its field. We consider ourselves not simply a group of projects\
+	sharing a server, but rather a community of developers and users.
+Bundle-DocURL: http://www.apache.org/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-Vendor: JetStream Software
+Bundle-ContactAddress: https://www.jetstreamsoft.com
+-buildpath: javax.persistence-api
+Export-Package: \
+	org.apache.aries.jpa.supplier,\
+	org.apache.aries.jpa.template
+-sources: false
+Import-Package: \
+	javax.persistence;version='[2.0.0,3.0.0)',\
+	*
+-pom: \
+	groupid="com.jetstream",\
+	artifactid="jpa-api"

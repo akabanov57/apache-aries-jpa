@@ -1,0 +1,15 @@
+Bundle-Version: 1.0.0
+-buildpath: \
+	javax.persistence-api,\
+	org.hibernate.orm.core;version=5.3
+Export-Package: jpa.test.db
+Bundle-Name: JPA Test DB
+Bundle-SymbolicName: jpa.test.db
+Automatic-Module-Name: jpa.test.db
+Meta-Persistence: META-INF/persistence.xml
+-includeresource: META-INF=src/META-INF
+-sources: false
+Import-Package: \
+	org.hibernate.annotations;version='[5.3.0,5.4.0)',\
+	org.hibernate.proxy;version='[5.3.0,5.4.0)',\
+	*

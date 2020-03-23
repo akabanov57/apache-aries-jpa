@@ -1,0 +1,72 @@
+# Discover and run all test cases annotated with the @RunWith annotation
+Test-Cases: ${classes;NAMED;*Test}
+
+# Build dependencies 
+-buildpath: \
+	osgi.enroute.base.api,\
+	osgi.core,\
+	osgi.enroute.junit.wrapper;version=4.12,\
+	osgi.enroute.hamcrest.wrapper;version=1.3,\
+	javax.persistence-api,\
+	osgi.cmpn,\
+	jpa.test.db;version=latest
+
+javac.source: 1.8
+javac.target: 1.8
+
+Bundle-Version: 1.0.0.${tstamp}
+Private-Package: jpa.test.db.test
+-runfw: org.apache.felix.framework;version='[6.0.3,6.0.3]'
+-runee: JavaSE-1.8
+-runrequires: \
+	bnd.identity;id='osgi.enroute.hamcrest.wrapper',\
+	bnd.identity;id='osgi.enroute.junit.wrapper',\
+	bnd.identity;id='hibernate.framework.extension',\
+	bnd.identity;id='jpa.test.db',\
+	bnd.identity;id='jpa.test.db.test',\
+	osgi.identity;filter:='(&(osgi.identity=net.bytebuddy.byte-buddy)(version>=1.10.3))',\
+	osgi.identity;filter:='(&(osgi.identity=org.apache.felix.eventadmin)(version>=1.5.0))',\
+	osgi.identity;filter:='(&(osgi.identity=org.osgi.service.jdbc)(version>=1.0.0))',\
+	bnd.identity;id='org.apache.aries.jpa.api',\
+	bnd.identity;id='org.apache.aries.jpa.container',\
+	bnd.identity;id='org.apache.aries.jpa.support',\
+	bnd.identity;id='org.hibernate.orm.core',\
+	bnd.identity;id='org.hibernate.orm.osgi',\
+	bnd.identity;version='42.2.9';id='org.postgresql.jdbc42'
+-runbundles: \
+	javassist;version='[3.24.0,3.24.1)',\
+	javax.el-api;version='[3.0.2,3.0.3)',\
+	javax.enterprise.cdi-api;version='[2.0.0,2.0.1)',\
+	javax.interceptor-api;version='[1.2.2,1.2.3)',\
+	javax.persistence-api;version='[2.2.0,2.2.1)',\
+	javax.transaction-api;version='[1.3.0,1.3.1)',\
+	jaxb-api;version='[2.3.1,2.3.2)',\
+	net.bytebuddy.byte-buddy;version='[1.10.3,1.10.4)',\
+	org.apache.felix.eventadmin;version='[1.5.0,1.5.1)',\
+	org.apache.servicemix.bundles.antlr;version='[2.7.7,2.7.8)',\
+	org.apache.servicemix.bundles.dom4j;version='[2.1.1,2.1.2)',\
+	org.apache.servicemix.bundles.javax-inject;version='[1.0.0,1.0.1)',\
+	org.hibernate.common.hibernate-commons-annotations;version='[5.1.0,5.1.1)',\
+	org.ops4j.pax.logging.pax-logging-api;version='[1.11.2,1.11.3)',\
+	org.osgi.service.jdbc;version='[1.0.0,1.0.1)',\
+	osgi.enroute.hamcrest.wrapper;version='[1.3.0,1.3.1)',\
+	osgi.enroute.junit.wrapper;version='[4.12.0,4.12.1)',\
+	org.apache.felix.configadmin;version='[1.9.16,1.9.17)',\
+	org.osgi.service.coordinator;version='[1.0.2,1.0.3)',\
+	com.fasterxml.classmate;version='[1.5.1,1.5.2)',\
+	org.jboss.jandex;version='[2.1.2,2.1.3)',\
+	org.hibernate.orm.core;version='[5.3.14,5.3.15)',\
+	org.hibernate.orm.osgi;version='[5.3.14,5.3.15)',\
+	org.postgresql.jdbc42;version='[42.2.9,42.2.10)',\
+	hibernate.framework.extension;version='[1.0.0,1.0.1)',\
+	jpa.test.db;version='[1.0.0,1.0.1)',\
+	jpa.test.db.test;version='[1.0.0,1.0.1)',\
+	org.apache.aries.jpa.api;version='[2.7.2,2.7.3)',\
+	org.apache.aries.jpa.container;version='[2.7.2,2.7.3)',\
+	org.apache.aries.jpa.support;version='[2.7.2,2.7.3)',\
+	org.osgi.service.jpa;version='[1.1.0,1.1.1)'
+-runproperties: org.osgi.framework.bootdelegation='sun.misc'
+
+-runblacklist: \
+	bnd.identity;version='5.3.15';id='org.hibernate.orm.osgi',\
+	bnd.identity;version='5.3.15';id='org.hibernate.orm.core'

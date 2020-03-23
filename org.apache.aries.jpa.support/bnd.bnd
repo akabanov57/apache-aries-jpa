@@ -1,0 +1,30 @@
+Bundle-Version: 2.7.2-SNAPSHOT
+Bundle-Name: Apache Aries JPA support
+Bundle-SymbolicName: org.apache.aries.jpa.support
+Bundle-Activator: org.apache.aries.jpa.support.osgi.impl.Activator
+Automatic-Module-Name: org.apache.aries.jpa.support
+Bundle-Vendor: JetStream Software
+Bundle-ContactAddress: https://www.jetstreamsoft.com
+Bundle-Description: Builds upon JPA container and provides EmSupplier \
+	and JPATemplate service per persistence unit. These make it easier to\
+	use EntityManager in a thread safe way
+Bundle-DocURL: http://www.apache.org/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+-buildpath: \
+	org.apache.aries.jpa.api;version=latest,\
+	osgi.core,\
+	org.ops4j.pax.logging.pax-logging-api,\
+	org.osgi.service.coordinator,\
+	javax.persistence-api,\
+	javax.transaction-api,\
+	osgi.cmpn
+Private-Package: \
+	org.apache.aries.jpa.support.impl,\
+	org.apache.aries.jpa.support.osgi.impl,\
+	org.apache.aries.jpa.support.xa.impl
+-sources: false
+Import-Package: \
+	org.osgi.framework;version='[1.6.0,2.0.0)',\
+	javax.persistence.spi;version='[2.0.0,3.0.0)',\
+	javax.persistence;version='[2.0.0,3.0.0)',\
+	*

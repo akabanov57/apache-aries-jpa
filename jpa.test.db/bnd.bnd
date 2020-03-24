@@ -10,6 +10,5 @@ Meta-Persistence: META-INF/persistence.xml
 -includeresource: META-INF=src/META-INF
 -sources: false
 Import-Package: \
-	org.hibernate.annotations;version='[5.3.0,5.4.0)',\
 	org.hibernate.proxy;version='[5.3.0,5.4.0)',\
 	*

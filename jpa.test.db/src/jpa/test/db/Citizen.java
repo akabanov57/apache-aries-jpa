@@ -16,7 +16,7 @@ public class Citizen implements Serializable {
 	
 	@Column(name = "id", updatable = false, unique = true, nullable = false)
 	@Id
-	@org.hibernate.annotations.Type(type = "pg-uuid")
+//	@org.hibernate.annotations.Type(type = "pg-uuid")
 	private UUID id;
 	
 	@Column(name = "first_name", nullable = false)

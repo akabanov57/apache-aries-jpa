@@ -1,2 +1,80 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Local" increment="1573313060964"/>
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Local" increment="1580458740000">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="jakarta.persistence"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.2.3" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.2.3" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="jakarta.persistence"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.2.3" type="Version"/>
+      <attribute name="osgi.wiring.host" value="jakarta.persistence"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="173811" type="Long"/>
+      <attribute name="url" value="jakarta.persistence_2.2.3.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="5FBCD6E20D1EB030E89EFA3E056E0337167D2A911E8D4FEC05B68A4FE737B193"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="jakarta.persistence"/>
+      <attribute name="bundle-version" value="2.2.3" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.persistence.criteria"/>
+      <attribute name="jpa" value="2.2"/>
+      <attribute name="version" value="2.2.3" type="Version"/>
+      <attribute name="bnd.hashes" value="-1212404314,-691319544,-294791732,1699264513,35339636,-1526091797,36969,295630662,929794849,-1917049060,2058934794,-1168032631,-1739420376,198012600,67770010,2117152740,2198474,2314570,-1337090140,1410000648,-1793884026,76453678,-109696255,2480197,-1747098898,1702575144,655935895,2553090,288002412,-645618548,-1998281048,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="jakarta.persistence"/>
+      <attribute name="bundle-version" value="2.2.3" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.persistence"/>
+      <attribute name="jpa" value="2.2"/>
+      <attribute name="version" value="2.2.3" type="Version"/>
+      <attribute name="bnd.hashes" value="1955373444,851460830,-1496444083,854873798,1633020548,-650293602,593956456,1232781067,63955982,64864098,1719828609,814669026,1450759100,169424878,52742064,2023997302,-328563917,1101683008,1558341783,-1678723693,1654237568,-500826816,-519411470,1810029526,277469269,1963024026,1279963301,850493098,1280083301,2080559107,1304339664,-1367635189,-1647217284,517496362,-642316416,-1619637539,856438272,-1623549221,-2006084613,1072804512,829397720,-2083086392,766590196,1984485783,1526742657,-270016245,1641182530,1232940178,2363,-1003602691,70793394,-324205398,269394692,-1244434112,77248307,1499150500,76575,668063208,-1276663975,-516940071,-2094883156,-1997529213,1454953397,-2137984839,1066306147,-1250932477,-124201008,1987884997,1382525328,-1997491662,123500581,-1147835822,-1223171999,1270972598,-669067752,1665600013,1700055343,1407890767,-1643225871,-811135673,1096452241,1385456628,-666064544,2056726341,-237091369,457542693,-1459373020,-336538743,419337420,886274621,374336127,-92674512,-1042067062,1422057539,-1272421232,996228468,1064362147,1696742213,-1364511696,1064367905,-1718201991,-423828354,821421510,1524526324,-724999836,-629235287,-1811165743,137228519,232993068,768577053,-1943915018,78391464,196732751,-1368965962,-1910001237,2111860442,1043164377,-271275022,180409025,844699968,-1213664297,1031112572,1249005369,1159658584,-2007609554,2104855962,80563118,678343365,-446192050,-1256797374,1786994076,-1326366638,-1238252950,81172392,-71126476,1025203870,459796654,-1281892900,2016261304,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="jakarta.persistence"/>
+      <attribute name="bundle-version" value="2.2.3" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.persistence.spi"/>
+      <attribute name="jpa" value="2.2"/>
+      <attribute name="version" value="2.2.3" type="Version"/>
+      <attribute name="bnd.hashes" value="212563105,-912502997,1001874832,-360516170,1165,-1012715583,-1959962486,2098692020,1956863423,1313780249,-191820030,1696378865,1148081173,-254714445,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="jakarta.persistence"/>
+      <attribute name="bundle-version" value="2.2.3" type="Version"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.jpa"/>
+      <attribute name="bnd.hashes" value="-1539960837" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="jakarta.persistence"/>
+      <attribute name="bundle-version" value="2.2.3" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.persistence.metamodel"/>
+      <attribute name="jpa" value="2.2"/>
+      <attribute name="version" value="2.2.3" type="Version"/>
+      <attribute name="bnd.hashes" value="1581399515,2017053308,304820328,-725077707,1004517175,1183806846,-793781889,510466525,322130640,50338686,1694225241,326222016,478176490,947453988,2041245756,-1090707624,1716793466,349463589,427050326,-135018059,2622298,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.sql)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="javax.sql"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.jpa)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.jpa"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version&gt;=1.8))"/>
+    </requirement>
+  </resource>
+</repository>

@@ -1,0 +1,9 @@
+-buildpath: \
+	javax.persistence-api;version=2.2.0,\
+	org.postgresql.jdbc42
+Export-Package: jpa.test.db.el
+Bundle-Version: 1.0.0
+Bundle-SymbolicName: jpa.test.db.el
+Meta-Persistence: META-INF/persistence.xml
+-includeresource: META-INF=src/META-INF
+-sources: false

@@ -42,4 +42,5 @@
 	org.apache.aries.jpa.support;version='[2.7.2,2.7.3)',\
 	org.apache.servicemix.bundles.javax-inject;version='[1.0.0,1.0.1)',\
 	org.osgi.service.coordinator;version='[1.0.2,1.0.3)',\
-	org.osgi.service.jdbc;version='[1.0.0,1.0.1)'
+	org.osgi.service.jdbc;version='[1.0.0,1.0.1)',\
+	org.osgi.service.jpa;version='[1.1.0,1.1.1)'
